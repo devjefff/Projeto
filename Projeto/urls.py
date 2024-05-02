@@ -18,15 +18,14 @@ from django.contrib import admin
 from django.http import HttpResponse
 from django.urls import include, path
 
-from recipes.views import about, contact, home
 
-# def contact(request):
-#     return HttpResponse('contato')
+def my_view(request):
+    return HttpResponse
 
 
 # def about(request):
 #     return HttpResponse('Sobre')
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('recipes.urls'))
+    path('', my_view),
 ]
