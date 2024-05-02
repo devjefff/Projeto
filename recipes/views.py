@@ -1,9 +1,15 @@
+import datetime
+
 from django.http import HttpResponse
 from django.shortcuts import render
 
 
-def _home(request):
-    return HttpResponse('HOME 1')
+# def _home(request):
+#     now = datetime.datetime.now()
+#     html = f'<html><body> It is now {now}</body></html>'
+#     return HttpResponse(html)
+def home(request):
+    return render(request, 'home.html')
 
 
 def contact(request):
