@@ -9,11 +9,13 @@ from django.shortcuts import render
 #     html = f'<html><body> It is now {now}</body></html>'
 #     return HttpResponse(html)
 def home(request):
-    return render(request, 'home.html')
+    return render(request, 'recipes/home.html', context={
+        'name': 'Jeferson Guimarães',
+    })
 
 
 def contact(request):
-    return HttpResponse('contato')
+    return render(request, 'temp/temp.html')
 
 
 def about(request):
