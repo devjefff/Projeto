@@ -12,4 +12,4 @@ def home(request):
     return render(request, 'recipes/home.html', context={
         'name': 'Jeferson Guimarães',
         'date': f'{now}'
-    }, status=404)
+    })
