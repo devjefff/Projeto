@@ -1,6 +1,5 @@
 from datetime import datetime
 
-from django.http import HttpResponse
 from django.shortcuts import render
 
 
@@ -14,11 +13,3 @@ def home(request):
         'name': 'Jeferson Guimarães',
         'date': f'{now}'
     }, status=404)
-
-
-def contact(request):
-    return render(request, 'recipes/contato.html')
-
-
-def about(request):
-    return HttpResponse('Sobre')
