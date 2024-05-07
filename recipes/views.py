@@ -1,4 +1,4 @@
-import datetime
+from datetime import datetime
 
 from django.http import HttpResponse
 from django.shortcuts import render
@@ -9,9 +9,11 @@ from django.shortcuts import render
 #     html = f'<html><body> It is now {now}</body></html>'
 #     return HttpResponse(html)
 def home(request):
+    now = datetime.now()
     return render(request, 'recipes/home.html', context={
         'name': 'Jeferson Guimarães',
-    })
+        'date': f'{now}'
+    }, status=404)
 
 
 def contact(request):
