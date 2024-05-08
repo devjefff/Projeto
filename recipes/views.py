@@ -9,7 +9,7 @@ from django.shortcuts import render
 #     return HttpResponse(html)
 def home(request):
     now = datetime.now()
-    return render(request, 'recipes/home.html', context={
+    return render(request, 'recipes/pages/home.html', context={
         'name': 'Jeferson Guimarães',
         'date': f'{now}'
     })
