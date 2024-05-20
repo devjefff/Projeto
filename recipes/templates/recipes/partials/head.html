@@ -274,12 +274,26 @@
             filter: brightness(2)
         }
 
-        .developer {
-            background: (var(--color-primary-dark));
-            display: block;
-            color: var(--color-primary-dark);
-            padding: var(--spacing-gutter-medium);
-            flex-flow: row nowrap;
+        .main-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: var(--color-primary-dark);
+            color: var(--color-white);
+            padding: var(--spacing-gutter-large);
+        }
+
+        .main-footer a {
+            color: var(--color-white);
+            text-decoration: none;
+            transition: 300ms all ease-in-out;
+
+
+        }
+
+        .main-footer a {
+            filter: brightness(.8);
+
         }
     </style>
 
