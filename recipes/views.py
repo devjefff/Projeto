@@ -13,3 +13,7 @@ def home(request):
         'name': 'Jeferson Guimarães',
         'date': f'{now}'
     })
+
+
+def recipe(request, id):
+    return render(request, 'recipes/pages/home.html')
